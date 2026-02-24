@@ -1,0 +1,18 @@
+<html>
+<head><title>Astrowain</title></head>
+<body>
+<h1>🔮 Astrowain Astrology</h1>
+
+<button onclick="load()">Show Astrologers</button>
+<ul id="list"></ul>
+
+<script>
+async function load(){
+ const res = await fetch("/api/astrologers");
+ const data = await res.json();
+ document.getElementById("list").innerHTML =
+   data.map(a=>`<li>${a.name} - ${a.speciality}</li>`).join("");
+}
+</script>
+</body>
+</html>
