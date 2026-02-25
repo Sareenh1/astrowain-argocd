@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: sareen/astrowain-backend:v1
+        image: sareen/astrowain-backend:latest
         ports:
         - containerPort: 5000
 ---

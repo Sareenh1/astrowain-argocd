@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: sareen/astrowain-frontend:v1
+        image: sareen/astrowain-frontend:latest
         ports:
         - containerPort: 80
 ---
